@@ -5,6 +5,7 @@ var router = express.Router();
 
 var Task = require('../models/task');
 
+
 /** [GET] /tasks */
 router.route('/tasks').get(function (req, res) {
 	Task.find(function (erro, tasks) {
@@ -15,6 +16,7 @@ router.route('/tasks').get(function (req, res) {
 		res.json(tasks);
 	})
 });
+
 
 /** [GET] /tasks/<id> */
 router.route('/tasks/:id').get(function (req, res) {

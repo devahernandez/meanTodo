@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 // Banco de Dados
-mongoose.connect('mongodb://localhost/keep');
+mongoose.connect('mongodb://admin:root@ds153667.mlab.com:53667/mean-database');
 
 // Inicializa o Express
 var app = express();
@@ -19,6 +19,10 @@ app.use(express.static(__dirname + '/public'));
 
 // Rotas da API
 app.use('/api', require('./api/tasks'));
+app.use('/api', require('./api/cursos'));
+
+
+
 
 // Rotas do aplicativo
 app.get('/', function (req, res) {
