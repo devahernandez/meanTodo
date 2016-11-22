@@ -14,7 +14,7 @@
 		<md-toolbar class="md-accent">
 			<div class="md-toolbar-tools">
 				<h2>
-					<span>Google Keep</span>
+					<span>Votaciones</span>
 				</h2>
 
 				<span flex></span>
@@ -28,7 +28,7 @@
 				</md-button>
 
 				<md-input-container md-no-float class="campoBusca">
-					<input ng-model="search" placeholder="Procurar tarefa">
+					<input ng-model="search" placeholder="Buscar">
 				</md-input-container>
 			</div>
 		</md-toolbar>
@@ -40,11 +40,27 @@
 						<md-card-title>
 							<md-card-title-text>
 								<md-input-container md-no-float class="md-block">
-									<input ng-model="nova.title" name="titulo" placeholder="Título" ng-required="true">
+									<input ng-model="nova.title" name="titulo" placeholder="Nombre" ng-required="true">
 								</md-input-container>
 							
 								<md-input-container>
-									<label>Descrição</label>
+									<label>Partido</label>
+									<textarea ng-model="nova.description" name="descricao" columns="1" ng-minlength="10" md-maxlength="150" ng-required="true" rows="5"></textarea>
+								</md-input-container>
+								<md-input-container>
+									<label>Edad</label>
+									<textarea ng-model="nova.description" name="descricao" columns="1" ng-minlength="10" md-maxlength="150" ng-required="true" rows="5"></textarea>
+								</md-input-container>
+								<md-input-container>
+									<label>Distrito</label>
+									<textarea ng-model="nova.description" name="descricao" columns="1" ng-minlength="10" md-maxlength="150" ng-required="true" rows="5"></textarea>
+								</md-input-container>
+								<md-input-container>
+									<label>CURP</label>
+									<textarea ng-model="nova.description" name="descricao" columns="1" ng-minlength="10" md-maxlength="150" ng-required="true" rows="5"></textarea>
+								</md-input-container>
+								<md-input-container>
+									<label>Clave</label>
 									<textarea ng-model="nova.description" name="descricao" columns="1" ng-minlength="10" md-maxlength="150" ng-required="true" rows="5"></textarea>
 								</md-input-container>
 							</md-card-title-text>
